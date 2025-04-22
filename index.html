@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actuariat & Finance - Formation d'Excellence</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/>
+            </svg>
+            <p>Actuariat & Finance</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="ActuFin-011.jpg" alt="Actuariat Finance Logo" class="header__logo-img">
+                        <span class="header__logo-text">Actuariat & Finance</span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                        <li class="nav__item"><a href="#program" class="nav__link">Programme</a></li>
+                        <li class="nav__item"><a href="#careers" class="nav__link">Débouchés</a></li>
+                        <li class="nav__item"><a href="#stats" class="nav__link">Résultats</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <a href="#contact" class="btn btn--sm btn--primary">Nous contacter</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link">Accueil</a></li>
+                <li class="mobile-menu__item"><a href="#program" class="mobile-menu__link">Programme</a></li>
+                <li class="mobile-menu__item"><a href="#careers" class="mobile-menu__link">Débouchés</a></li>
+                <li class="mobile-menu__item"><a href="#stats" class="mobile-menu__link">Résultats</a></li>
+                <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="#contact" class="btn btn--full btn--primary">Nous contacter</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__content" data-aos="fade-right">
+                    <div class="hero__badge">Formation d'excellence</div>
+                    <h1 class="hero__title">Formation d'Excellence en <span class="text-accent">Actuariat & Finance</span></h1>
+                    <p class="hero__text">
+                        La filière Actuariat-Finance (AF) de l'INSEA forme des ingénieurs spécialisés dans la gestion des risques, 
+                        l'assurance, la finance et le conseil, avec deux axes principaux : l'actuariat et la finance quantitative.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#program" class="btn btn--primary">
+                            Découvrir le programme
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn--outline">
+                            Nous contacter
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero__trusted">
+                        <p></p>
+                        <div class="hero__logos">
+                            <div class="hero__logo-box">
+                                <img src="AXA_Logo.svg.png" alt="AXA" class="hero__logo">
+                            </div>
+                            <div class="hero__logo-box">
+                                <img src="unnamed.png" alt="Attijariwafa Bank" class="hero__logo">
+                            </div>
+                            <div class="hero__logo-box">
+                                <img src="Bmce_afric.png" alt="BMCE Bank" class="hero__logo">
+                            </div>
+                            <div class="hero__logo-box">
+                                <img src="channels4_profile.jpg" alt="CFA Institute" class="hero__logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__image" data-aos="fade-left">
+                    <div class="hero__image-wrapper">
+                        <img src="INSEA.jpeg" alt="INSEA Campus" class="hero__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__shapes">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+            <div class="hero__shape hero__shape--3"></div>
+        </div>
+        <div class="hero__wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,154.7C672,128,768,96,864,101.3C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section__header text-center" data-aos="fade-up">
+                <div class="section__badge">Pourquoi choisir notre formation</div>
+                <h2 class="section__title">Une Formation <span class="text-accent">Unique</span> en Son Genre</h2>
+                <div class="section__line"></div>
+                <p class="section__text">
+                    Notre programme combine théorie et pratique pour vous offrir une formation complète et adaptée aux besoins du marché.
+                </p>
+            </div>
+            
+            <div class="features__grid">
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-card__title">Pédagogie Innovante</h3>
+                    <p class="feature-card__text">
+                        Approche par compétences avec des projets concrets et des études de cas réels en collaboration avec nos partenaires industriels.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Simulations de trading</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Ateliers professionnels</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-card__title">Insertion Professionnelle</h3>
+                    <p class="feature-card__text">
+                        Taux d'emploi proche de 100% dès la fin des études, avec un salaire d'entrée situé entre 12 000 et 15 000 DH/mois.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Réseau de 50+ entreprises</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Forum emploi annuel</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-card__title">Ouverture Internationale</h3>
+                    <p class="feature-card__text">
+                        Plusieurs doubles diplômes et échanges possibles avec ENSAE, ENSAI, EURIA, UCLouvain et ULaval, accompagnés de bourses allant jusqu'à 1000 €/mois.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Échanges universitaires</span>
+                        </li>
+                        <li class="feature-card__item">
+                            <i class="fas fa-check"></i>
+                            <span>Accès à des masters M2 en France</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section" id="stats">
+        <div class="container">
+            <div class="section__header text-center" data-aos="fade-up">
+                <div class="section__badge">Statistiques et résultats</div>
+                <h2 class="section__title">Nos Chiffres <span class="text-accent">Clés</span></h2>
+                <div class="section__line"></div>
+                <p class="section__text">
+                    Découvrez les statistiques qui démontrent l'excellence de notre formation et le succès de nos diplômés.
+                </p>
+            </div>
+
+            <div class="stats__counters">
+                <div class="stats__counter-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats__counter-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="stats__circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stats__circle-progress" cx="50" cy="50" r="45" data-percent="100"></circle>
+                        </svg>
+                        <div class="stats__counter-content">
+                            <span class="counter" data-target="100" data-suffix="%">0</span>
+                        </div>
+                    </div>
+                    <h3 class="stats__counter-title">Taux d'emploi</h3>
+                    <p class="stats__counter-text">De nos diplômés trouvent un emploi dans les 6 mois</p>
+                </div>
+
+                <div class="stats__counter-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats__counter-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="stats__circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stats__circle-progress" cx="50" cy="50" r="45" data-percent="85"></circle>
+                        </svg>
+                        <div class="stats__counter-content">
+                            <span class="counter" data-target="13500" data-suffix=" MAD">0</span>
+                        </div>
+                    </div>
+                    <h3 class="stats__counter-title">Salaire moyen</h3>
+                    <p class="stats__counter-text">Salaire mensuel moyen à l'embauche</p>
+                </div>
+
+                <div class="stats__counter-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats__counter-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="stats__circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="stats__circle-progress" cx="50" cy="50" r="45" data-percent="65"></circle>
+                        </svg>
+                        <div class="stats__counter-content">
+                            <span class="counter" data-target="45">0</span>
+                        </div>
+                    </div>
+                    <h3 class="stats__counter-title">Entreprises partenaires</h3>
+                    <p class="stats__counter-text">Qui recrutent régulièrement nos diplômés</p>
+                </div>
+            </div>
+
+            <div class="stats__charts">
+                <div class="stats__chart-card" data-aos="fade-up">
+                    <h3 class="stats__chart-title">Répartition par secteur</h3>
+                    <div class="stats__chart-container">
+                        <canvas id="sectorsChart"></canvas>
+                        <div class="stats__chart-center">
+                            <!-- Removed the counter and text -->
+                        </div>
+                    </div>
+                    <div class="stats__chart-legend">
+                        <div class="stats__legend-item">
+                            <span class="stats__legend-color" style="background-color: #4FD1C5;"></span>
+                            <span class="stats__legend-text">Assurance <strong>(45%)</strong></span>
+                        </div>
+                        <div class="stats__legend-item">
+                            <span class="stats__legend-color" style="background-color: #818CF8;"></span>
+                            <span class="stats__legend-text">Banque <strong>(35%)</strong></span>
+                        </div>
+                        <div class="stats__legend-item">
+                            <span class="stats__legend-color" style="background-color: #A78BFA;"></span>
+                            <span class="stats__legend-text">Consulting <strong>(15%)</strong></span>
+                        </div>
+                        <div class="stats__legend-item">
+                            <span class="stats__legend-color" style="background-color: #F472B6;"></span>
+                            <span class="stats__legend-text">Autres <strong>(5%)</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats__chart-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="stats__chart-title">Évolution de carrière</h3>
+                    <div class="stats__chart-container stats__chart-container--bar">
+                        <canvas id="salaryChart"></canvas>
+                    </div>
+                    <p class="stats__chart-note">Progression moyenne du salaire après la diplomation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="program section" id="program">
+        <div class="container">
+            <div class="section__header text-center" data-aos="fade-up">
+                <div class="section__badge">Programme</div>
+                <h2 class="section__title">Notre Programme <span class="text-accent">Complet</span></h2>
+                <div class="section__line"></div>
+                <p class="section__text">
+                    Découvrez les différentes étapes de notre programme de formation.
+                </p>
+            </div>
+
+            <div class="program__grid">
+                <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-card__icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="program-card__title">Cours Théoriques</h3>
+                    <p class="program-card__text">
+                        Apprendre les concepts fondamentaux de l'actuariat et de la finance.
+                    </p>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-card__icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="program-card__title">Projets Pratiques</h3>
+                    <p class="program-card__text">
+                        Mettre en pratique les concepts appris en réalisant des projets concrets.
+                    </p>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-card__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="program-card__title">Études de Cas</h3>
+                    <p class="program-card__text">
+                        Analyser et résoudre des cas réels en collaboration avec nos partenaires industriels.
+                    </p>
+                </div>
+
+                <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-card__icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="program-card__title">Évaluation</h3>
+                    <p class="program-card__text">
+                        Évaluer les résultats et ajuster le programme en conséquence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers section" id="careers">
+        <div class="container">
+            <div class="section__header text-center" data-aos="fade-up">
+                <div class="section__badge">Perspectives professionnelles</div>
+                <h2 class="section__title">Débouchés <span class="text-accent">Professionnels</span></h2>
+                <div class="section__line"></div>
+                <p class="section__text">
+                    Nos diplômés occupent des postes stratégiques dans les secteurs de la finance, de l'assurance et du conseil.
+                </p>
+            </div>
+
+            <div class="careers__grid">
+                <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="career-card__icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="career-card__title">Actuaire</h3>
+                    <p class="career-card__text">
+                        Évaluation des risques financiers, conception de produits d'assurance et calcul des primes et provisions.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">15K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">35K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>Statistiques</span>
+                        <span>Modélisation</span>
+                        <span>Réglementation</span>
+                    </div>
+                </div>
+
+                <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="career-card__icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="career-card__title">Quant Analyst</h3>
+                    <p class="career-card__text">
+                        Développement de modèles mathématiques pour l'évaluation d'actifs et la stratégie d'investissement.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">14K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">32K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>Algorithmes</span>
+                        <span>Optimisation</span>
+                        <span>Trading</span>
+                    </div>
+                </div>
+
+                <div class="career-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="career-card__icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="career-card__title">Risk Manager</h3>
+                    <p class="career-card__text">
+                        Identification et gestion des risques financiers, conformité réglementaire et stress testing.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">13K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">30K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>Bâle III</span>
+                        <span>Solvabilité II</span>
+                        <span>Compliance</span>
+                    </div>
+                </div>
+
+                <div class="career-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="career-card__icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="career-card__title">Data Scientist</h3>
+                    <p class="career-card__text">
+                        Analyse de grandes masses de données financières et développement d'algorithmes prédictifs.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">16K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">38K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>Machine Learning</span>
+                        <span>Big Data</span>
+                        <span>Python/R</span>
+                    </div>
+                </div>
+
+                <div class="career-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="career-card__icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="career-card__title">Gestionnaire de Portefeuille</h3>
+                    <p class="career-card__text">
+                        Construction et gestion de portefeuilles d'investissement pour des clients institutionnels.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">14K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">34K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>Allocation d'actifs</span>
+                        <span>CFA</span>
+                        <span>Bloomberg</span>
+                    </div>
+                </div>
+
+                <div class="career-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="career-card__icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="career-card__title">Consultant Financier</h3>
+                    <p class="career-card__text">
+                        Conseil en stratégie financière, fusions-acquisitions et optimisation des structures de capital.
+                    </p>
+                    <div class="career-card__stats">
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">15K</span>
+                            <span class="career-card__stat-label">Salaire initial</span>
+                        </div>
+                        <div class="career-card__stat">
+                            <span class="career-card__stat-value">40K</span>
+                            <span class="career-card__stat-label">5 ans d'exp.</span>
+                        </div>
+                    </div>
+                    <div class="career-card__skills">
+                        <span>M&A</span>
+                        <span>Due Diligence</span>
+                        <span>Valorisation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="careers__companies" data-aos="fade-up">
+                <h3>Ils recrutent nos diplômés</h3>
+                <div class="careers__companies-logos">
+                    <div class="careers__company">
+                        <img src="AXA_Logo.svg.png" alt="AXA" class="careers__company-logo">
+                    </div>
+                    <div class="careers__company">
+                        <img src="unnamed.png" alt="Attijariwafa Bank" class="careers__company-logo">
+                    </div>
+                    <div class="careers__company">
+                        <img src="Bmce_afric.png" alt="BMCE Bank" class="careers__company-logo">
+                    </div>
+                    <div class="careers__company">
+                        <img src="channels4_profile.jpg" alt="CFA Institute" class="careers__company-logo">
+                    </div>
+                    <div class="careers__company">
+                        <img src="AXA_Logo.svg.png" alt="AXA" class="careers__company-logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="careers__cta text-center" data-aos="fade-up">
+                <a href="#contact" class="btn btn--primary btn--lg">
+                    Nous contacter pour en savoir plus
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header text-center" data-aos="fade-up">
+                <div class="section__badge">Contactez-nous</div>
+                <h2 class="section__title">Besoin de Plus <span class="text-accent">d'Informations</span> ?</h2>
+                <div class="section__line"></div>
+                <p class="section__text">
+                    Vous souhaitez en savoir plus sur notre formation en Actuariat & Finance ? Notre équipe est à votre disposition pour répondre à toutes vos questions.
+                </p>
+            </div>
+
+            <div class="contact__wrapper">
+                <!-- Contact Form -->
+                <div class="contact__form" data-aos="fade-right">
+                    <div class="contact__form-header">
+                        <h3>Envoyez-nous un message</h3>
+                        <p>Nous vous répondrons dans les plus brefs délais</p>
+                    </div>
+                    <form id="contactForm" class="form" action="https://formspree.io/f/mblorwdn" method="POST">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nom complet <span class="form__required">*</span></label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email <span class="form__required">*</span></label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Sujet <span class="form__required">*</span></label>
+                            <select id="subject" name="subject" class="form__select" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="admission">Admission et prérequis</option>
+                                <option value="program">Programme de formation</option>
+                                <option value="career">Débouchés professionnels</option>
+                                <option value="partnership">Partenariats entreprises</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message <span class="form__required">*</span></label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_replyto" value="amineaitbounousm@gmail.com">
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact__info" data-aos="fade-left">
+                    <div class="contact__card">
+                        <h3>Nos coordonnées</h3>
+                        <div class="contact__items">
+                            <div class="contact__item">
+                                <div class="contact__item-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact__item-content">
+                                    <h4>Adresse</h4>
+                                    <p>INSEA BP : 6217, Madinat Al Irfane - Rabat Instituts Maroc</p>
+                                    <a href="https://goo.gl/maps/1UyR1TfZ8M9mY6JJ8" target="_blank" rel="noopener noreferrer" class="contact__item-link">
+                                        Voir sur la carte →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__item-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact__item-content">
+                                    <h4>Téléphone</h4>
+                                    <p>+212 537 779 457</p>
+                                    <p>+212 610 878 025 (Mobile)</p>
+                                    <a href="tel:+212537779457" class="contact__item-button">
+                                        Appeler maintenant
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__item-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact__item-content">
+                                    <h4>Email</h4>
+                                    <p>contact@insea.ac.ma</p>
+                                    <p>amineaitbounousm@gmail.com</p>
+                                    <a href="mailto:amineaitbounousm@gmail.com" class="contact__item-button">
+                                        Envoyer un email
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__item-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact__item-content">
+                                    <h4>Horaires d'ouverture</h4>
+                                    <p>Lundi - Vendredi: 9h00 - 17h00</p>
+                                    <p>Samedi: 9h00 - 13h00</p>
+                                    <p class="contact__item-note">Fermé les dimanches et jours fériés</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <h4>Suivez-nous sur les réseaux sociaux</h4>
+                            <div class="contact__social-links">
+                                <a href="https://www.linkedin.com/company/actufin-insea/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact__social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/actufin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="contact__social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="contact__social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="contact__social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col footer__col--main">
+                    <div class="footer__logo">
+                        <img src="INSEA_logo.png" alt="Logo INSEA" class="footer__logo-img">
+                    </div>
+                    <h3 class="footer__brand">Actuariat & Finance</h3>
+                    <p class="footer__text">
+                        Formation d'excellence en actuariat et finance quantitative, préparant aux métiers les plus demandés du secteur financier.
+                    </p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Liens rapides</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link">Accueil</a></li>
+                        <li><a href="#program" class="footer__link">Programme</a></li>
+                        <li><a href="#careers" class="footer__link">Débouchés</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Ressources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Brochure PDF</a></li>
+                        <li><a href="#" class="footer__link">Calendrier académique</a></li>
+                        <li><a href="#" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p class="footer__text">
+                        Abonnez-vous à notre newsletter pour recevoir les dernières actualités sur notre formation.
+                    </p>
+                    <form class="footer__form" id="newsletterForm" action="https://formspree.io/f/mblorwdn" method="POST">
+                        <input type="email" name="email" placeholder="Votre email" class="footer__input" required>
+                        <input type="hidden" name="form-type" value="newsletter">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <button type="submit" class="footer__button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="newsletterStatus" class="footer__status" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Actuariat & Finance. Tous droits réservés.
+                </p>
+                <div class="footer__credits">
+                    <span><strong>Made by: Amine Ait Bounou</strong> <a href="https://www.linkedin.com/in/amine-ait-bounou-530b73325" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 
